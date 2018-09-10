@@ -164,6 +164,7 @@ namespace Imbokodo.Controllers
 
 
         [HttpPost]
+        [OutputCache(Duration=3)]
         public async Task<ActionResult> Upload(HttpPostedFileBase file)
         {
             if (file != null && file.ContentLength > 0)
