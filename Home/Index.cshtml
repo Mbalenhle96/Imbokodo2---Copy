@@ -24,7 +24,42 @@
         <div class="col-sm-12">
             @foreach (BlobInfo blob in ViewBag.Blobs)
             {
-                <img src="@blob.ThumbnailUri" width="192" title="@blob.Caption" style="padding-right: 16px; padding-bottom: 16px" />
+                <img src="@blob.ThumbnailUri" width="192"  style="padding-right: 16px; padding-bottom: 16px" />
+                <p>@blob.Caption</p>
+
+                <p>@blob.Tag0</p>
+                <p>@blob.Tag1</p>
+                <p>@blob.Tag2</p>
+                <p>@blob.Tag3</p>
+                <p>@blob.Tag4</p>
+                <p>@blob.Tag5</p>
+                <p>@blob.Tag6</p>
+                <p>@blob.Tag7</p>
+                <p>@blob.Tag8</p>
+                <p>@blob.Tag9</p>
+                <p>@blob.Tag10</p>
+                <p>@blob.Tag11</p>                
+                @*<p>@blob.Tag12</p>
+                <p>@blob.Tag13</p>
+                <p>@blob.Tag14</p>
+                <p>@blob.Tag15</p>
+                <p>@blob.Tag16</p>
+                <p>@blob.Tag17</p>
+                <p>@blob.Tag18</p>
+                <p>@blob.Tag19</p>
+                <p>@blob.Tag20</p>
+                <p>@blob.Tag21</p>
+                <p>@blob.Tag22</p>
+                <p>@blob.Tag23</p>
+                <p>@blob.Tag24</p>
+                <p>@blob.Tag25</p>*@
+                
+
+
+
+
+                @Html.ActionLink("Details", "getPropeties", "Home", new { name = blob.ImageUri }, null)
+                @Html.ActionLink("Delete", "DeleteImg", "Home", new { name = blob.ImageUri }, null)
             }
         </div>
     </div>
